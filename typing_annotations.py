@@ -44,6 +44,23 @@ numbers: List[int] = [1, 2, 3, 4]
 coordinates: Tuple[float, float] = (40.7128, -74.0060)
 employee_data: Dict[str, int] = {"Alice":30, "Bob": 25}
 
+print("Numbers List:", numbers)
+print("First number:", numbers[0])
+print("First number:", numbers[1])
+
+print("\nCoordinates (Latitude, Longitude):", coordinates)
+print("Latitude:", coordinates[0])
+print("Longitude:", coordinates[1])
+
+print("\nEmployee Data:", employee_data)
+print("Alice's Age:", employee_data["Alice"])
+print("Bob's Age:", employee_data["Bob"])
+
+# Iterating through dictionary
+print("\nEmployee Names and Ages:")
+
+
+
 #-------------------------------------------------
 
 #5 Optional Types
@@ -56,6 +73,7 @@ def get_user(name: str) -> Optional[dict]:
     return users.get(name)
 
 print(get_user('Alice'))
+print(get_user('Bob'))
 
 #-------------------------------------------------
 
